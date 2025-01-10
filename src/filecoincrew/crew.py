@@ -69,7 +69,8 @@ class Filecoincrew():
 		return Agent(
 			config=self.agents_config['database_engineer'],
 			tools=[lighthouse_storage_tool],
-			verbose=True
+			verbose=True,
+			max_iter=1
 		)
 	
 	# To learn more about structured task outputs, 
