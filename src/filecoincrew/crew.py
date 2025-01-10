@@ -29,7 +29,7 @@ def filecoin_json_reader(url: str) -> str:
 def lighthouse_storage_tool() -> str:
 	"""A tool to store data on Filecoin via Lighthouse"""
 	# Tool logic here
-	lh = Lighthouse(token="LIGHTHOUSE_TOKEN")
+	lh = Lighthouse(token="LIGHTHOUSE_API_KEY")
 	response = lh.upload("lighthousereport.md")
 	hash_value = response.get('data', {}).get('Hash')
 	return hash_value
