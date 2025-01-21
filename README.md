@@ -21,6 +21,7 @@ crewai install
 ### Customizing
 
 **Add your `GROQ_API_KEY` into the `.env` file**
+You can get the keys from [here](https://console.groq.com/keys)
 
 - Modify `src/filecoincrew/config/agents.yaml` to define your agents
 - Modify `src/filecoincrew/config/tasks.yaml` to define your tasks
